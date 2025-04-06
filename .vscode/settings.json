@@ -1,0 +1,9 @@
+{
+    "editor.codeActionsOnSave": {
+        "source.fixAll.ts": "explicit",
+        "source.fixAll.eslint": "explicit",
+        "source.organizeImports": "explicit",
+        "source.sortImports": "explicit"
+    },
+    "editor.formatOnSave": true
+}

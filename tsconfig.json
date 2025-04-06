@@ -1,3 +1,27 @@
 {
-  "extends": "@react-native/typescript-config/tsconfig.json"
+    "compilerOptions": {
+        "allowUnreachableCode": false,
+        "allowUnusedLabels": false,
+        "esModuleInterop": true,
+        "jsx": "react-native",
+        "noImplicitUseStrict": false,
+        "noStrictGenericChecks": false,
+        "resolveJsonModule": true,
+        "skipLibCheck": true,
+        "strict": true,
+        "noUncheckedIndexedAccess": true,
+        "allowSyntheticDefaultImports": true,
+        "noFallthroughCasesInSwitch": true,
+        "noImplicitAny": true,
+        "noImplicitReturns": true,
+        "noUncheckedSideEffectImports": true,
+        "noUnusedLocals": true,
+        "noUnusedParameters": true,
+        "rootDir": ".",
+        "baseUrl": ".",
+        "paths": {
+            "@App/*": ["./src/*"]
+        }
+    },
+    "extends": "@react-native/typescript-config/tsconfig.json"
 }
