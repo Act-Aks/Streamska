@@ -1,10 +1,47 @@
 # Contributing to Streamska
 
-Thank you for your interest in contributing to Streamska! We welcome all forms of contributions, including bug reports, feature requests, documentation improvements, and code contributions.
+<div style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen-Sans, Ubuntu, Cantarell, sans-serif; max-width: 800px; margin: 0 auto; padding: 2rem; background: linear-gradient(to bottom right, #0a0a1a, #1a0a2a); border-radius: 16px; box-shadow: 0 8px 32px rgba(0,0,0,0.15);">
+
+<style>
+  @keyframes gradientShift {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+  }
+  .contributing-header {
+    background: linear-gradient(90deg, #ff00ff, #ff7b00, #00a2ff);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: gradientShift 10s ease infinite;
+    background-size: 200% auto;
+  }
+  .guide-card {
+    background: linear-gradient(145deg, rgba(26, 28, 44, 0.95), rgba(45, 26, 54, 0.95));
+    border-radius: 16px;
+    padding: 2rem;
+    margin: 2rem 0;
+    border: 1px solid rgba(255,123,0,0.15);
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .guide-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 25px 50px -12px rgba(255, 123, 0, 0.25);
+  }
+</style>
+
+<h1 class="contributing-header" style="font-size: 2.5rem; margin-bottom: 2rem;">🌟 Contributing Guide</h1>
+
+<div class="guide-card">
+  <h2 style="color: #ff7b00; margin-top: 0;">Thank you for your interest in contributing to Streamska!</h2>
+  <p style="color: #e2e8f0; line-height: 1.6;">We welcome all forms of contributions, including bug reports, feature requests, documentation improvements, and code contributions.</p>
 
 We want this community to be friendly and respectful to each other. Please follow our [Code of Conduct](./CODE_OF_CONDUCT.md) in all your interactions with the project.
 
-## Getting Started
+</div>
+
+<div class="guide-card">
+  <h2 style="background: linear-gradient(90deg, #ff00ff, #ff7b00); -webkit-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent; margin-top: 0;">🚀 Getting Started</h2>
 
 ### Prerequisites
 
@@ -31,9 +68,13 @@ We want this community to be friendly and respectful to each other. Please follo
     yarn start
     ```
 
-## Development Workflow
+</div>
 
-### Running the App
+<div class="guide-card">
+  <h2 style="background: linear-gradient(90deg, #00a2ff, #ff7b00); -webkit-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent; margin-top: 0;">🛠 Development Workflow</h2>
+
+<div style="margin: 1.5rem 0; padding: 1.5rem; background: rgba(0, 162, 255, 0.1); border-radius: 8px; border-left: 4px solid #00a2ff;">
+  <h3 style="color: #00a2ff; margin: 0 0 1rem 0;">🏃♂️ Running the App</h3>
 
 - For iOS:
     ```sh
@@ -44,7 +85,10 @@ We want this community to be friendly and respectful to each other. Please follo
     yarn android
     ```
 
-### Code Quality
+</div>
+
+<div style="margin: 1.5rem 0; padding: 1.5rem; background: rgba(255, 123, 0, 0.1); border-radius: 8px; border-left: 4px solid #ff7b00;">
+  <h3 style="color: #ff7b00; margin: 0 0 1rem 0;">🧼 Code Quality</h3>
 
 We use several tools to maintain code quality:
 
@@ -120,8 +164,8 @@ docs: update README with installation steps
 
 ```
 streamska/
-├── app/              # Main application code
-├── android/          # Android-specific code
+├── src/             # Main application code
+├── android/         # Android-specific code
 ├── ios/             # iOS-specific code
 ├── __tests__/       # Test files
 └── ...              # Configuration files
