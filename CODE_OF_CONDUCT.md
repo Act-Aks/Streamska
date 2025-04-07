@@ -1,164 +1,136 @@
-<div style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen-Sans, Ubuntu, Cantarell, sans-serif; max-width: 800px; margin: 0 auto; padding: 2rem;">
+# Streamska Code of Conduct
 
-<style>
-  @keyframes gradientShift {
-    0% { background-position: 0% 50%; }
-    50% { background-position: 100% 50%; }
-    100% { background-position: 0% 50%; }
-  }
+## Our Pledge
 
-  .policy-header {
-    background: linear-gradient(90deg, #ff00ff, #ff7b00, #00a2ff);
-    -webkit-background-clip: text;
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
-    animation: gradientShift 10s ease infinite;
-    background-size: 200% auto;
-    font-size: 2.5rem;
-    margin-bottom: 2rem;
-  }
+We as members, contributors, and leaders of the Streamska project pledge to make participation in our
+community a harassment-free experience for everyone, regardless of age, body
+size, visible or invisible disability, ethnicity, sex characteristics, gender
+identity and expression, level of experience, education, socio-economic status,
+nationality, personal appearance, race, caste, color, religion, or sexual
+identity and orientation.
 
-  .policy-card {
-    background: linear-gradient(145deg, rgba(26, 28, 44, 0.95), rgba(45, 26, 54, 0.95));
-    border-radius: 16px;
-    padding: 2rem;
-    margin: 2rem 0;
-    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-    border: 1px solid rgba(255,123,0,0.15);
-    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
-    position: relative;
-    overflow: hidden;
-  }
-  .policy-card::before {
-    content: '';
-    position: absolute;
-    top: -50%;
-    left: -50%;
-    width: 200%;
-    height: 200%;
-    background: linear-gradient(45deg, transparent, rgba(255,123,0,0.1), transparent);
-    transform: rotate(45deg);
-    animation: gradientShift 20s linear infinite;
-  }
+We pledge to act and interact in ways that contribute to an open, welcoming,
+diverse, inclusive, and healthy community.
 
-  .policy-card:hover {
-    transform: translateY(-4px);
-    box-shadow: 0 25px 50px -12px rgba(255, 123, 0, 0.25);
-    border-color: rgba(255,123,0,0.3);
-  }
+## Our Standards
 
-  .hover-content {
-    max-height: 0;
-    overflow: hidden;
-    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
-    opacity: 0;
-    padding-left: 1rem;
-    border-left: 2px solid rgba(255,123,0,0.3);
-    margin-top: 1rem;
-  }
+Examples of behavior that contributes to a positive environment for our
+community include:
 
-  .policy-card:hover .hover-content {
-    max-height: 500px;
-    opacity: 1;
-  }
+- Demonstrating empathy and kindness toward other people
+- Being respectful of differing opinions, viewpoints, and experiences
+- Giving and gracefully accepting constructive feedback
+- Accepting responsibility and apologizing to those affected by our mistakes,
+  and learning from the experience
+- Focusing on what is best not just for us as individuals, but for the overall
+  community
+- Being mindful of the impact of our words and actions on others
+- Supporting and encouraging other community members
 
-  .more-indicator {
-    display: inline-block;
-    color: #ff7b00;
-    font-size: 0.9em;
-    margin-left: 8px;
-    transition: transform 0.3s ease;
-  }
+Examples of unacceptable behavior include:
 
-  .policy-card:hover .more-indicator {
-    transform: rotate(180deg);
-  }
-</style>
+- The use of sexualized language or imagery, and sexual attention or advances of
+  any kind
+- Trolling, insulting or derogatory comments, and personal or political attacks
+- Public or private harassment
+- Publishing others' private information, such as a physical or email address,
+  without their explicit permission
+- Other conduct which could reasonably be considered inappropriate in a
+  professional setting
+- Spamming or excessive self-promotion
+- Disruptive behavior in discussions or development processes
 
-<div style="background: linear-gradient(145deg, #1a0033, #33001a); padding: 2.5rem; border-radius: 16px; margin-bottom: 2.5rem; border-left: 4px solid #ff7b00;">
-  <h1 class="gradient-text" style="font-size: 3rem; margin: 0 0 1.5rem;">
-    🏆 Streamska Code of Conduct
-  </h1>
-  <p style="color: #a0aec0; line-height: 1.6;">
-    We're committed to fostering an open and welcoming environment for everyone.
-  </p>
-</div>
+## Enforcement Responsibilities
 
-<div class="policy-card">
-  <h2 class="gradient-text" style="font-size: 2rem; margin-bottom: 1.5rem;">✨ Our Pledge <span class="more-indicator">▼</span></h2>
-  <p style="color: #cbd5e0; line-height: 1.7;">
-    We pledge to make participation in our project a harassment-free experience...
-  </p>
-  <div class="hover-content">
-    <p style="color: #a0aec0; font-size: 0.95em;">
-      🕵️♂️ <strong>Transparency Note:</strong> All conduct reports are reviewed within 48 hours by at least 2 maintainers. 
-      Resolution steps are documented in our <a href="#" style="color: #ff7b00; text-decoration: underline;">public moderation log</a>.
-    </p>
-  </div>
-</div>
+Project maintainers are responsible for clarifying and enforcing our standards of
+acceptable behavior and will take appropriate and fair corrective action in
+response to any behavior that they deem inappropriate, threatening, offensive,
+or harmful.
 
-<div class="policy-card">
-  <h2 class="section-header">🚩 Our Standards <span class="more-indicator">▼</span></h2>
-  <p style="color: #cbd5e0;">Examples of positive behavior:</p>
-  <div class="hover-content">
-    <div style="background: rgba(26,28,44,0.5); padding: 1rem; border-radius: 8px;">
-      <p style="color: #a0aec0; margin: 0;">
-        🔍 <strong>Enforcement Transparency:</strong> Moderators follow our 
-        <a href="#" style="color: #ff7b00; text-decoration: underline;">public moderation guidelines</a> 
-        when reviewing incidents.
-      </p>
-    </div>
-  </div>
-  <ul style="color: #cbd5e0; padding-left: 1.5rem;">
-    <li>Using welcoming language</li>
-    <li>Being respectful of differing viewpoints</li>
-    <li>Graceful acceptance of constructive criticism</li>
-  </ul>
-</div>
+Project maintainers have the right and responsibility to remove, edit, or reject
+comments, commits, code, wiki edits, issues, and other contributions that are
+not aligned to this Code of Conduct, and will communicate reasons for moderation
+decisions when appropriate.
 
-<div class="policy-card" style="background: linear-gradient(145deg, rgba(45,26,54,0.95), rgba(26,28,44,0.95));
-    border-color: rgba(255,123,0,0.3);">
-  <h2 class="section-header">⚡ Enforcement <span class="more-indicator">▼</span></h2>
-  <p style="color: #cbd5e0;">
-    Project maintainers have the right to remove, edit, or reject comments...
-  </p>
-  <div class="hover-content">
-    <div style="background: rgba(45,26,54,0.5); padding: 1rem; border-radius: 8px; margin-top: 1rem;">
-      <p style="color: #a0aec0; margin: 0 0 0.5rem;">
-        🔒 <strong>Process Transparency:</strong> All enforcement actions are documented in our
-        <a href="#" style="color: #ff7b00; text-decoration: underline;">public moderation archive</a> within 72 hours.
-      </p>
-      <ul style="color: #a0aec0; padding-left: 1.25rem; margin: 0;">
-        <li>Appeal process available through independent review panel</li>
-        <li>Quarterly transparency reports published</li>
-        <li>Anonymous reporting option available</li>
-      </ul>
-    </div>
-  </div>
-</div>
+## Scope
 
-<div style="margin-top: 3rem; text-align: center; padding: 1.5rem; background: linear-gradient(145deg, rgba(26,28,44,0.95), rgba(45,26,54,0.95));
-    border-left: 4px solid #ff7b00;
-    backdrop-filter: blur(4px); border-radius: 8px;">
-  <p style="color: #cbd5e0;
-      font-size: 1.1rem;">
-    📬 Contact maintainers at <span style="color: #ff7b00;">akashsrivastava.git@gmail.com</span> <span class="more-indicator">▼</span>
-  </p>
-  <div class="hover-content">
-    <div style="background: rgba(26,28,44,0.5); padding: 1rem; border-radius: 8px;">
-      <p style="color: #a0aec0; margin: 0 0 0.5rem;">
-        ⏱️ <strong>Response Transparency:</strong> All reports receive:
-        <ul style="padding-left: 1.25rem; margin: 0.5rem 0;">
-          <li>Initial response within 24 hours</li>
-          <li>Confidentiality guarantee</li>
-          <li>Option for anonymous reporting</li>
-        </ul>
-      </p>
-      <p style="color: #a0aec0; margin: 0;">
-        🔗 Review our <a href="#" style="color: #ff7b00; text-decoration: underline;">report handling workflow</a>
-      </p>
-    </div>
-  </div>
-</div>
+This Code of Conduct applies within all project spaces, including:
 
-</div>
+- GitHub repositories and discussions
+- Discord server and other communication channels
+- Project-related social media accounts
+- In-person events and meetups
+
+## Enforcement
+
+Instances of abusive, harassing, or otherwise unacceptable behavior may be
+reported to the project team by emailing conduct@streamska.com. All complaints
+will be reviewed and investigated promptly and fairly.
+
+All project maintainers are obligated to respect the privacy and security of the
+reporter of any incident.
+
+## Enforcement Guidelines
+
+Project maintainers will follow these Community Impact Guidelines in determining
+the consequences for any action they deem in violation of this Code of Conduct:
+
+### 1. Correction
+
+**Community Impact**: Use of inappropriate language or other behavior deemed
+unprofessional or unwelcome in the community.
+
+**Consequence**: A private, written warning from project maintainers, providing
+clarity around the nature of the violation and an explanation of why the
+behavior was inappropriate. A public apology may be requested.
+
+### 2. Warning
+
+**Community Impact**: A violation through a single incident or series of
+actions.
+
+**Consequence**: A warning with consequences for continued behavior. No
+interaction with the people involved, including unsolicited interaction with
+those enforcing the Code of Conduct, for a specified period of time. This
+includes avoiding interactions in community spaces as well as external channels
+like social media. Violating these terms may lead to a temporary or permanent
+ban.
+
+### 3. Temporary Ban
+
+**Community Impact**: A serious violation of community standards, including
+sustained inappropriate behavior.
+
+**Consequence**: A temporary ban from any sort of interaction or public
+communication with the community for a specified period of time. No public or
+private interaction with the people involved, including unsolicited interaction
+with those enforcing the Code of Conduct, is allowed during this period.
+Violating these terms may lead to a permanent ban.
+
+### 4. Permanent Ban
+
+**Community Impact**: Demonstrating a pattern of violation of community
+standards, including sustained inappropriate behavior, harassment of an
+individual, or aggression toward or disparagement of classes of individuals.
+
+**Consequence**: A permanent ban from any sort of public interaction within the
+community.
+
+## Attribution
+
+This Code of Conduct is adapted from the [Contributor Covenant][homepage],
+version 2.1, available at
+[https://www.contributor-covenant.org/version/2/1/code_of_conduct.html][v2.1].
+
+Community Impact Guidelines were inspired by
+[Mozilla's code of conduct enforcement ladder][Mozilla CoC].
+
+For answers to common questions about this code of conduct, see the FAQ at
+[https://www.contributor-covenant.org/faq][FAQ]. Translations are available at
+[https://www.contributor-covenant.org/translations][translations].
+
+[homepage]: https://www.contributor-covenant.org
+[v2.1]: https://www.contributor-covenant.org/version/2/1/code_of_conduct.html
+[Mozilla CoC]: https://github.com/mozilla/diversity
+[FAQ]: https://www.contributor-covenant.org/faq
+[translations]: https://www.contributor-covenant.org/translations
