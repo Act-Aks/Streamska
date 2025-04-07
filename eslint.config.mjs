@@ -17,6 +17,7 @@ export default defineConfig([
             'metro.config.js',
             'index.js',
             'eslint.config.mjs',
+            'tailwind.config.js',
         ],
     },
     { settings: { react: { version: 'detect' } } },
