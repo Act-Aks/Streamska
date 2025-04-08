@@ -13,7 +13,7 @@ runs:
           id: check
           shell: bash
           run: |
-              if [[ "${{ github.actor }}" == "renovate[bot]" ]] || [[ "${{ github.event.pull_request.author_association }}" == "OWNER" ]]; then
+              if [[ "${{ github.actor }}" == "renovate[bot]" ]] || [[ "${{ github.actor }}" == "Act-Aks" ]] || [[ "${{ github.event.pull_request.author_association }}" == "OWNER" ]]; then
                 echo "is-authorized=true" >> $GITHUB_OUTPUT
               else
                 echo "is-authorized=false" >> $GITHUB_OUTPUT
