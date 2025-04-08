@@ -1,0 +1,28 @@
+const spacingMultiplier = 4
+
+export default {
+    x1: spacingMultiplier * 1,
+    x2: spacingMultiplier * 2,
+    x3: spacingMultiplier * 3,
+    x4: spacingMultiplier * 4,
+    x5: spacingMultiplier * 5,
+    x6: spacingMultiplier * 6,
+    x7: spacingMultiplier * 7,
+    x8: spacingMultiplier * 8,
+    x9: spacingMultiplier * 9,
+    x10: spacingMultiplier * 10,
+    x11: spacingMultiplier * 11,
+    x12: spacingMultiplier * 12,
+    x13: spacingMultiplier * 13,
+    x14: spacingMultiplier * 14,
+    x15: spacingMultiplier * 15,
+    x16: spacingMultiplier * 16,
+    x17: spacingMultiplier * 17,
+    x18: spacingMultiplier * 18,
+    x19: spacingMultiplier * 19,
+    x20: spacingMultiplier * 20,
+    x21: spacingMultiplier * 21,
+    x22: spacingMultiplier * 22,
+    x23: spacingMultiplier * 23,
+    x24: spacingMultiplier * 24,
+} as const

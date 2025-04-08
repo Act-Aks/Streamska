@@ -11,8 +11,25 @@ on:
         types:
             - checks_requested
 
+permissions:
+    contents: read
+
 jobs:
+    check-permissions:
+        runs-on: ubuntu-latest
+        outputs:
+            is-authorized: ${{ steps.check-permissions.outputs.is-authorized }}
+        steps:
+            - name: Checkout
+              uses: actions/checkout@v4
+
+            - name: Check Permissions
+              id: check-permissions
+              uses: ./.github/actions/check-permissions
+
     lint:
+        needs: check-permissions
+        if: needs.check-permissions.outputs.is-authorized == 'true'
         runs-on: ubuntu-latest
         steps:
             - name: Checkout
@@ -30,6 +47,8 @@ jobs:
               run: yarn typecheck
 
     test:
+        needs: check-permissions
+        if: needs.check-permissions.outputs.is-authorized == 'true'
         runs-on: ubuntu-latest
         steps:
             - name: Checkout

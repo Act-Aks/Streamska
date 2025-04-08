@@ -1,0 +1,20 @@
+name: Check Permissions
+description: Verify if the user is authorized to run workflows
+
+outputs:
+    is-authorized:
+        description: Whether the user is authorized to run workflows
+        value: ${{ steps.check.outputs.is-authorized }}
+
+runs:
+    using: composite
+    steps:
+        - name: Check if user is authorized
+          id: check
+          shell: bash
+          run: |
+              if [[ "${{ github.actor }}" == "renovate[bot]" ]] || [[ "${{ github.event.pull_request.author_association }}" == "OWNER" ]]; then
+                echo "is-authorized=true" >> $GITHUB_OUTPUT
+              else
+                echo "is-authorized=false" >> $GITHUB_OUTPUT
+              fi

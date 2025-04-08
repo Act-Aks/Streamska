@@ -1,22 +1,26 @@
+import { NavigationContainer } from '@react-navigation/native'
+import { createNativeStackNavigator } from '@react-navigation/native-stack'
 import React from 'react'
-import { StatusBar, View } from 'react-native'
+import { StatusBar } from 'react-native'
 import { GestureHandlerRootView } from 'react-native-gesture-handler'
-import Animated, { SlideInRight } from 'react-native-reanimated'
+import { SafeAreaProvider } from 'react-native-safe-area-context'
 
+import Home from './screens/Home/Home'
 import './styles/global.css'
+
+const Stack = createNativeStackNavigator()
 
 const App: React.FC = () => {
     return (
         <GestureHandlerRootView>
-            <View className={'flex-1 items-center justify-center bg-neutral-900'}>
-                <StatusBar />
-                <Animated.Text
-                    entering={SlideInRight.duration(2000).springify().damping(14)}
-                    className={'text-red-500 font-bold'}
-                >
-                    {'Hi lets jump'}
-                </Animated.Text>
-            </View>
+            <SafeAreaProvider>
+                <NavigationContainer>
+                    <Stack.Navigator>
+                        <Stack.Screen name={'Home'} component={Home} />
+                    </Stack.Navigator>
+                </NavigationContainer>
+                <StatusBar barStyle={'dark-content'} />
+            </SafeAreaProvider>
         </GestureHandlerRootView>
     )
 }
