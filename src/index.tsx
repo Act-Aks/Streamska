@@ -5,6 +5,7 @@ import { StatusBar } from 'react-native'
 import { GestureHandlerRootView } from 'react-native-gesture-handler'
 import { SafeAreaProvider } from 'react-native-safe-area-context'
 
+import { SplashScreenWrapper } from './components/organisms'
 import Home from './screens/Home/Home'
 import './styles/global.css'
 
@@ -15,9 +16,11 @@ const App: React.FC = () => {
         <GestureHandlerRootView>
             <SafeAreaProvider>
                 <NavigationContainer>
-                    <Stack.Navigator>
-                        <Stack.Screen name={'Home'} component={Home} />
-                    </Stack.Navigator>
+                    <SplashScreenWrapper>
+                        <Stack.Navigator>
+                            <Stack.Screen name={'Home'} component={Home} />
+                        </Stack.Navigator>
+                    </SplashScreenWrapper>
                 </NavigationContainer>
                 <StatusBar barStyle={'dark-content'} />
             </SafeAreaProvider>
