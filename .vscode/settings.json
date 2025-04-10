@@ -5,5 +5,9 @@
         "source.organizeImports": "explicit",
         "source.sortImports": "explicit"
     },
-    "editor.formatOnSave": true
+    "editor.formatOnSave": true,
+    "tailwindCSS.experimental.classRegex": [
+        ["tv\\(([^)]*)\\)", "[\"'`]([^\"'`]*).*?[\"'`]"],
+        ["tv\\(([^)]*)\\)", "([\"'`][^\"'`]*).*?([\"'`])"]
+    ]
 }
