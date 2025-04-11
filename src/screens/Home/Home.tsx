@@ -1,26 +1,23 @@
-import { colorScheme, useColorScheme } from 'nativewind'
 import React from 'react'
-import { Pressable, View } from 'react-native'
+import { Pressable } from 'react-native'
 
-import { Text } from '@App/components/atoms'
+import { Container, Text } from '@App/components/atoms'
+import { useColorScheme } from '@App/utils/colorScheme'
 
 const Home: React.FC = () => {
-    const { setColorScheme } = useColorScheme()
+    const { setColorScheme, isDarkColorScheme } = useColorScheme()
 
     return (
-        <View className={'flex flex-1 items-center justify-center gap-4 bg-background'}>
+        <Container className={'items-center justify-center'}>
             <Pressable
-                className={'mt-4 h-10 w-full items-center justify-center rounded-lg'}
+                className={'h-10 w-full items-center justify-center rounded-lg'}
                 onPress={() => {
-                    setColorScheme(colorScheme.get() === 'dark' ? 'light' : 'dark')
+                    setColorScheme(isDarkColorScheme ? 'light' : 'dark')
                 }}
             >
-                <Text size={'md'} weight={'extrabold'} className={'text-primary'} text={'ToggleTheme'} />
+                <Text className={'text-primary'} text={'ToggleTheme'} />
             </Pressable>
-            <Pressable className={'mt-4 h-10 w-full items-center justify-center rounded-lg'} onPress={() => {}}>
-                <Text size={'xl'} weight={'bold'} className={'text-primary'} text={'Settings'} />
-            </Pressable>
-        </View>
+        </Container>
     )
 }
 

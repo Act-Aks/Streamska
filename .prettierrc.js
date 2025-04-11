@@ -20,5 +20,4 @@ module.exports = {
     useTabs: false,
     tailwindConfig: './tailwind.config.js',
     tailwindStylesheet: './src/styles/global.css',
-    tailwindFunctions: ['tv'],
 }

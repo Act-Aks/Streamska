@@ -1,3 +1,10 @@
+import { type ClassValue, clsx } from 'clsx'
+import { twMerge } from 'tailwind-merge'
+
+export function cn(...inputs: ClassValue[]) {
+    return twMerge(clsx(inputs))
+}
+
 /**
  * Returns an array of key-value pairs from an object with proper TypeScript typing.
  * This is a typed version of Object.entries() that maintains the correct types for keys and values.

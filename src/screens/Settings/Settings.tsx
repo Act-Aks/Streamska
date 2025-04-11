@@ -16,7 +16,7 @@ const Settings: React.FC = () => {
                     navigate('Home')
                 }}
             >
-                <Text size={'md'} weight={'extrabold'} className={'text-primary'} text={'Home'} />
+                <Text className={'text-primary'} text={'Home'} />
             </Pressable>
         </View>
     )

@@ -34,6 +34,11 @@ export default defineConfig([
         rules: {
             'react/react-in-jsx-scope': 'off',
             '@typescript-eslint/naming-convention': 'off',
+            'no-console': ['error', { allow: ['error'] }],
+            'no-relative-import-paths/no-relative-import-paths': [
+                'error',
+                { allowSameFolder: true, rootDir: './src', prefix: '@App' },
+            ],
         },
     },
 ])
