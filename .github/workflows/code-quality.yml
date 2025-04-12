@@ -57,7 +57,7 @@ jobs:
                   fetch-depth: 0
 
             - name: Setup
-              uses: ./.github/actions/setup
+              uses: Act-Aks/cached-setup@v1.1.0
 
             - name: Run unit tests
               run: yarn test --maxWorkers=2 --coverage
