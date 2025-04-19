@@ -38,7 +38,7 @@ jobs:
                   fetch-depth: 0
 
             - name: Setup
-              uses: Act-Aks/cached-setup@v1.1.0
+              uses: Act-Aks/cached-setup@v1.1.1
 
             - name: Lint files
               run: yarn lint
@@ -57,7 +57,7 @@ jobs:
                   fetch-depth: 0
 
             - name: Setup
-              uses: Act-Aks/cached-setup@v1.1.0
+              uses: Act-Aks/cached-setup@v1.1.1
 
             - name: Run unit tests
               run: yarn test --maxWorkers=2 --coverage
