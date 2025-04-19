@@ -1,11 +1,10 @@
-import { NativeStackScreenProps } from '@react-navigation/native-stack'
+import { NativeStackNavigationOptions, NativeStackScreenProps } from '@react-navigation/native-stack'
 import { ComponentProps } from 'react'
 
-import { Home, Settings } from '@App/screens'
+import BottomTabNavigator from '@App/components/organisms/BottomTabNavigator/BottomTabNavigator'
 
 export type RootStackParamList = {
-    Home: ComponentProps<typeof Home> | undefined
-    Settings: ComponentProps<typeof Home> | undefined
+    HomeTab: ComponentProps<typeof BottomTabNavigator> | undefined
 }
 export type RootStackScreenProps<T extends keyof typeof rootStackScreens> = NativeStackScreenProps<
     RootStackParamList,
@@ -13,6 +12,11 @@ export type RootStackScreenProps<T extends keyof typeof rootStackScreens> = Nati
 >
 
 export const rootStackScreens = {
-    Home,
-    Settings,
+    HomeTab: BottomTabNavigator,
 } satisfies RootStackParamList
+
+export const screenOptions: Record<keyof RootStackParamList, NativeStackNavigationOptions> = {
+    HomeTab: {
+        headerShown: false,
+    },
+}

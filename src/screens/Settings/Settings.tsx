@@ -13,7 +13,7 @@ const Settings: React.FC = () => {
             <Pressable
                 className={'mt-4 h-10 w-full items-center justify-center rounded-lg'}
                 onPress={() => {
-                    navigate('Home')
+                    navigate('HomeTab')
                 }}
             >
                 <Text className={'text-primary'} text={'Home'} />

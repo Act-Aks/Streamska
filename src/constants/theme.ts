@@ -1,4 +1,6 @@
-export const NAV_THEME = {
+import { Theme } from '@react-navigation/native'
+
+export const NAV_THEME: Record<'light' | 'dark', Theme['colors']> = {
     light: {
         background: 'hsl(0 0% 100%)', // background
         border: 'hsl(220 13% 91%)', // border

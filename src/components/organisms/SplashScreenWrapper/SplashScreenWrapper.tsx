@@ -11,10 +11,8 @@ const SplashScreenWrapper: React.FC<PropsWithChildren> = ({ children }) => {
     const { colorScheme, isDarkColorScheme, setColorScheme } = useColorScheme()
 
     useEffect(() => {
-        if (!colorScheme) {
-            setColorScheme('dark')
-        }
         void (async () => {
+            setColorScheme(!colorScheme ? 'dark' : colorScheme)
             await BootSplash.hide({ fade: true })
         })()
     }, [colorScheme, setColorScheme])
