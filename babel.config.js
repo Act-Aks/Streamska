@@ -9,5 +9,6 @@ module.exports = {
                 alias: { '@App': './src' },
             },
         ],
+        'react-native-reanimated/plugin',
     ],
 }
