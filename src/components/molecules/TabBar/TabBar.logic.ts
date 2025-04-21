@@ -7,16 +7,14 @@ export const useTabBar = () => {
     const { buildHref } = useLinkBuilder()
     const { tabBarTranslateY } = useScroll()
 
-    const animatedStyle = useAnimatedStyle(() => {
-        return {
-            transform: [{ translateY: tabBarTranslateY.value }],
-            position: 'absolute',
-            bottom: 12,
-            left: 12,
-            right: 12,
-            borderRadius: 16,
-        }
-    })
+    const animatedStyle = useAnimatedStyle(() => ({
+        transform: [{ translateY: tabBarTranslateY.value }],
+        position: 'absolute',
+        bottom: 12,
+        left: 12,
+        right: 12,
+        borderRadius: 16,
+    }))
 
     return {
         buildHref,

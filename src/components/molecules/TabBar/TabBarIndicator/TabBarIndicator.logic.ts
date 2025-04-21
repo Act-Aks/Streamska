@@ -24,11 +24,9 @@ export const useTabBarIndicator = ({ state }: TabBarIndicatorProps) => {
     }, [state.index, tabWidth, indicatorWidth, indicatorX])
 
     // Animated style for the indicator
-    const indicatorAnimatedStyle = useAnimatedStyle(() => {
-        return {
-            transform: [{ translateX: indicatorX.value }],
-        }
-    })
+    const indicatorAnimatedStyle = useAnimatedStyle(() => ({
+        transform: [{ translateX: indicatorX.value }],
+    }))
 
     return {
         colors,

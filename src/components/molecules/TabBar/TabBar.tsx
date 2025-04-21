@@ -1,7 +1,10 @@
 import { BottomTabBarProps } from '@react-navigation/bottom-tabs'
 import { PlatformPressable } from '@react-navigation/elements'
+import { TabNavigationState } from '@react-navigation/native'
 import React from 'react'
 import Animated from 'react-native-reanimated'
+
+import { TabStackParamList } from '@App/components/organisms/BottomTabNavigator/BottomTabNavigator.static'
 
 import { useTabBar } from './TabBar.logic'
 import TabBarIcon from './TabBarIcon/TabBarIcon'
@@ -11,7 +14,7 @@ const TabBar: React.FC<BottomTabBarProps> = ({ state, descriptors, navigation })
     const { buildHref, animatedStyle } = useTabBar()
 
     const renderTabs = () =>
-        state.routes.map((route, index) => {
+        (state as TabNavigationState<TabStackParamList>).routes.map((route, index) => {
             const { options } = descriptors[route.key] as BottomTabBarProps['descriptors'][string]
 
             const isFocused = state.index === index

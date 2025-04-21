@@ -14,7 +14,7 @@ export const useScroll = () => {
 }
 
 const ScrollProvider: React.FC<PropsWithChildren> = ({ children }) => {
-    const tabBarTranslateY = useSharedValue(0)
+    const tabBarTranslateY = useSharedValue<number>(0)
 
     const scrollHandler = useAnimatedScrollHandler({
         onScroll: (event, ctx: { startY?: number }) => {
