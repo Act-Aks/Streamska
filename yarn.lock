@@ -3509,7 +3509,7 @@ __metadata:
     globals: "npm:^16.0.0"
     jest: "npm:^29.7.0"
     lefthook: "npm:^1.11.10"
-    lucide-react-native: "npm:^0.501.0"
+    lucide-react-native: "npm:^0.502.0"
     nativewind: "npm:^4.1.23"
     prettier: "npm:^3.5.3"
     prettier-plugin-sort-json: "npm:^4.1.1"
@@ -8390,14 +8390,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"lucide-react-native@npm:^0.501.0":
-  version: 0.501.0
-  resolution: "lucide-react-native@npm:0.501.0"
+"lucide-react-native@npm:^0.502.0":
+  version: 0.502.0
+  resolution: "lucide-react-native@npm:0.502.0"
   peerDependencies:
     react: ^16.5.1 || ^17.0.0 || ^18.0.0
     react-native: "*"
     react-native-svg: ^12.0.0 || ^13.0.0 || ^14.0.0 || ^15.0.0
-  checksum: 10c0/1d2e5a808d5e55a0e202253db304a1bba821e5e6ded470b392f5f704eaa4cc97bce7c3a5a6ba181e8cfae4493dd5544e8fa9c9eb8e34f607e62bb4d1e2c8f65d
+  checksum: 10c0/996cf75f21c7ff3d18489127e13bb7dbc1b8be9acbf9df2c94c0e6b5b173db4debfd5cf80b54a0b9961722b1f088190ee41c94c63066b33a5becab8dd1e66d7a
   languageName: node
   linkType: hard
 
