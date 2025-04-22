@@ -3,13 +3,14 @@ import React from 'react'
 import { Pressable, View } from 'react-native'
 
 import Text from '@App/components/atoms/Text/Text'
+import { useColorScheme } from '@App/utils/colorScheme'
 
 const Settings: React.FC = () => {
     const { navigate } = useNavigation()
+    const { setColorScheme, isDarkColorScheme } = useColorScheme()
 
     return (
         <View className={'flex flex-1 items-center justify-center bg-background'}>
-            <Text className={'text-primary'} text={'Home'} />
             <Pressable
                 className={'mt-4 h-10 w-full items-center justify-center rounded-lg'}
                 onPress={() => {
@@ -17,6 +18,13 @@ const Settings: React.FC = () => {
                 }}
             >
                 <Text className={'text-primary'} text={'Home'} />
+            </Pressable>
+
+            <Pressable
+                className={'mt-4 h-10 w-full items-center justify-center rounded-lg bg-primary'}
+                onPress={() => setColorScheme(isDarkColorScheme ? 'light' : 'dark')}
+            >
+                <Text className={'text-background'} text={isDarkColorScheme ? '🌙' : '🌞'} />
             </Pressable>
         </View>
     )

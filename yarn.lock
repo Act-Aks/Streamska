@@ -25,6 +25,18 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@act-aks/rn-carousel@npm:^1.1.5":
+  version: 1.1.5
+  resolution: "@act-aks/rn-carousel@npm:1.1.5"
+  dependencies:
+    react-native-reanimated: "npm:3.17.4"
+  peerDependencies:
+    react: ">=19"
+    react-native: ">=0.79"
+  checksum: 10c0/cf22e82acab7bf392058a8af2bfdf1ebb87da62fdfb9735dc34a397f30cfb866ed91a31f1d6206b54260f7a040f91af21a076ee72cd77ba17475e6a20885c338
+  languageName: node
+  linkType: hard
+
 "@alloc/quick-lru@npm:^5.2.0":
   version: 5.2.0
   resolution: "@alloc/quick-lru@npm:5.2.0"
@@ -3473,6 +3485,7 @@ __metadata:
   resolution: "Streamska@workspace:."
   dependencies:
     "@act-aks/eslint-config": "npm:^1.0.3"
+    "@act-aks/rn-carousel": "npm:^1.1.5"
     "@babel/core": "npm:^7.26.10"
     "@babel/preset-env": "npm:^7.26.9"
     "@babel/runtime": "npm:^7.27.0"
@@ -10078,7 +10091,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"react-native-reanimated@npm:^3.17.4":
+"react-native-reanimated@npm:3.17.4, react-native-reanimated@npm:^3.17.4":
   version: 3.17.4
   resolution: "react-native-reanimated@npm:3.17.4"
   dependencies:

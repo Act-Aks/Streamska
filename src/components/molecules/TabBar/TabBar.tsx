@@ -57,7 +57,7 @@ const TabBar: React.FC<BottomTabBarProps> = ({ state, descriptors, navigation })
     return (
         <Animated.View
             className={
-                'elevation-5 h-[60px] flex-row items-center overflow-hidden border-t border-t-border bg-card shadow-lg shadow-primary'
+                'elevation-5 h-[60px] flex-row items-center overflow-hidden border border-border bg-card shadow-lg shadow-primary'
             }
             style={animatedStyle}
         >
