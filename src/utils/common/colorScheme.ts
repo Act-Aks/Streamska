@@ -1,7 +1,7 @@
 import { useColorScheme as useNativewindColorScheme } from 'nativewind'
 import { useCallback } from 'react'
 
-import { getItem, setItem } from './storage'
+import { getItem, setItem } from './storage.ts'
 
 type ColorScheme = 'light' | 'dark' | 'system'
 

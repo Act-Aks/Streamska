@@ -3,7 +3,7 @@ import React, { PropsWithChildren, useEffect } from 'react'
 import { StatusBar } from 'react-native'
 import BootSplash from 'react-native-bootsplash'
 
-import { useColorScheme } from '@App/utils/colorScheme'
+import { useColorScheme } from '@App/utils/common/colorScheme.ts'
 
 import { DARK_THEME, LIGHT_THEME } from './SplashScreenWrapper.static'
 

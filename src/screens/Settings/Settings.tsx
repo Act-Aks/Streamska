@@ -3,7 +3,7 @@ import React from 'react'
 import { Pressable, View } from 'react-native'
 
 import Text from '@App/components/atoms/Text/Text'
-import { useColorScheme } from '@App/utils/colorScheme'
+import { useColorScheme } from '@App/utils/common/colorScheme.ts'
 
 const Settings: React.FC = () => {
     const { navigate } = useNavigation()

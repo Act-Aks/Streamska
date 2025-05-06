@@ -1,7 +1,7 @@
 import { createNativeStackNavigator } from '@react-navigation/native-stack'
 import React from 'react'
 
-import { entries } from '@App/utils/misc'
+import { entries } from '@App/utils/common/misc.ts'
 
 import { RootStackParamList, rootStackScreens, screenOptions } from './RootNavigator.static'
 

@@ -2,7 +2,7 @@ import { createBottomTabNavigator } from '@react-navigation/bottom-tabs'
 import React from 'react'
 
 import TabBar from '@App/components/molecules/TabBar/TabBar'
-import { entries } from '@App/utils/misc'
+import { entries } from '@App/utils/common/misc.ts'
 
 import { TabStackParamList, tabStackScreens } from './BottomTabNavigator.static'
 
