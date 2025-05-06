@@ -26,14 +26,14 @@ __metadata:
   linkType: hard
 
 "@act-aks/rn-carousel@npm:^1.1.5":
-  version: 1.1.5
-  resolution: "@act-aks/rn-carousel@npm:1.1.5"
+  version: 1.1.6
+  resolution: "@act-aks/rn-carousel@npm:1.1.6"
   dependencies:
-    react-native-reanimated: "npm:3.17.4"
+    react-native-reanimated: "npm:3.17.5"
   peerDependencies:
     react: ">=19"
     react-native: ">=0.79"
-  checksum: 10c0/cf22e82acab7bf392058a8af2bfdf1ebb87da62fdfb9735dc34a397f30cfb866ed91a31f1d6206b54260f7a040f91af21a076ee72cd77ba17475e6a20885c338
+  checksum: 10c0/01069a8cd2ec9498ea0eb89c8137e12b117ebf22486881799963df2e94f66be6c8d242b4eaba5a45913c0c2c99f4ba24d6e176efce602a7f6d43b51590d97d83
   languageName: node
   linkType: hard
 
@@ -10518,31 +10518,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"react-native-reanimated@npm:3.17.4":
-  version: 3.17.4
-  resolution: "react-native-reanimated@npm:3.17.4"
-  dependencies:
-    "@babel/plugin-transform-arrow-functions": "npm:^7.0.0-0"
-    "@babel/plugin-transform-class-properties": "npm:^7.0.0-0"
-    "@babel/plugin-transform-classes": "npm:^7.0.0-0"
-    "@babel/plugin-transform-nullish-coalescing-operator": "npm:^7.0.0-0"
-    "@babel/plugin-transform-optional-chaining": "npm:^7.0.0-0"
-    "@babel/plugin-transform-shorthand-properties": "npm:^7.0.0-0"
-    "@babel/plugin-transform-template-literals": "npm:^7.0.0-0"
-    "@babel/plugin-transform-unicode-regex": "npm:^7.0.0-0"
-    "@babel/preset-typescript": "npm:^7.16.7"
-    convert-source-map: "npm:^2.0.0"
-    invariant: "npm:^2.2.4"
-    react-native-is-edge-to-edge: "npm:1.1.7"
-  peerDependencies:
-    "@babel/core": ^7.0.0-0
-    react: "*"
-    react-native: "*"
-  checksum: 10c0/a86e0886acec76367b14cb3026de09a5c83b2845349b4c643b2a95eb56b9e477a3c6b5956707457c794dde3dc06e47d451c55d94188533abec04451c2c378160
-  languageName: node
-  linkType: hard
-
-"react-native-reanimated@npm:^3.17.5":
+"react-native-reanimated@npm:3.17.5, react-native-reanimated@npm:^3.17.5":
   version: 3.17.5
   resolution: "react-native-reanimated@npm:3.17.5"
   dependencies:
