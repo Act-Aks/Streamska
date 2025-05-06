@@ -1,12 +1,11 @@
 import React from 'react'
-import { Text } from 'react-native'
 
-import { Container } from '@App/components/atoms'
+import { Container, Text } from '@App/components/atoms'
 
 const SearchScreen: React.FC = () => {
     return (
         <Container className={'items-center justify-center'}>
-            <Text className={'text-primary'}>{'Search Screen'}</Text>
+            <Text className={'text-primary'} text={'Search Screen'} />
         </Container>
     )
 }

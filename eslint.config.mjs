@@ -1,12 +1,24 @@
 import { configs } from '@act-aks/eslint-config'
-import js from '@eslint/js'
 import pluginReact from 'eslint-plugin-react'
 import testingLibrary from 'eslint-plugin-testing-library'
 import { defineConfig } from 'eslint/config'
-import globals from 'globals'
-import tseslint from 'typescript-eslint'
+import tsEslint from 'typescript-eslint'
+
+const noRestrictedImportPaths = [
+    {
+        importNames: ['Text'],
+        message: 'Please use the `Text` from @App/components/atoms instead of react-native',
+        name: 'react-native',
+    },
+]
 
 export default defineConfig([
+    tsEslint.configs.recommended,
+    pluginReact.configs.flat.recommended,
+    testingLibrary.configs['flat/react'],
+    ...configs.recommended,
+    ...configs.react,
+    ...configs.reactNative,
     {
         ignores: [
             '**/__specs__/**',
@@ -20,16 +32,6 @@ export default defineConfig([
             'tailwind.config.js',
         ],
     },
-    { settings: { react: { version: 'detect' } } },
-    { files: ['**/*.{js,mjs,cjs,ts,jsx,tsx}'] },
-    { files: ['**/*.{js,mjs,cjs,ts,jsx,tsx}'], languageOptions: { globals: globals.node } },
-    { files: ['**/*.{js,mjs,cjs,ts,jsx,tsx}'], plugins: { js }, extends: ['js/recommended'] },
-    tseslint.configs.recommended,
-    pluginReact.configs.flat.recommended,
-    testingLibrary.configs['flat/react'],
-    ...configs.recommended,
-    ...configs.react,
-    ...configs.reactNative,
     {
         rules: {
             'react/react-in-jsx-scope': 'off',
@@ -39,6 +41,7 @@ export default defineConfig([
                 'error',
                 { allowSameFolder: true, rootDir: './src', prefix: '@App' },
             ],
+            '@typescript-eslint/no-restricted-imports': ['error', { paths: noRestrictedImportPaths }],
         },
     },
 ])

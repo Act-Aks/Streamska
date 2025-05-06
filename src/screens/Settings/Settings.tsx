@@ -12,7 +12,7 @@ const Settings: React.FC = () => {
     return (
         <View className={'flex flex-1 items-center justify-center bg-background'}>
             <Pressable
-                className={'mt-4 h-10 w-full items-center justify-center rounded-lg'}
+                className={'mt-4 h-10 w-full items-center justify-center rounded-lg backdrop-blur backdrop-filter'}
                 onPress={() => {
                     navigate('Home')
                 }}
