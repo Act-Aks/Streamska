@@ -22,7 +22,7 @@ jobs:
         steps:
             - name: Check Permissions
               id: check-permissions
-              uses: ./.github/actions/check-permissions
+              uses: Act-Aks/Streamska/.github/actions/check-permissions.yml@main
 
     lint:
         needs: check-permissions
