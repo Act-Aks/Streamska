@@ -20,9 +20,12 @@ jobs:
         outputs:
             is-authorized: ${{ steps.check-permissions.outputs.is-authorized }}
         steps:
+            - name: Checkout
+              uses: actions/checkout@v4
+
             - name: Check Permissions
               id: check-permissions
-              uses: Act-Aks/Streamska/.github/actions/check-permissions.yml@main
+              uses: ./.github/actions/check-permissions
 
     lint:
         needs: check-permissions
