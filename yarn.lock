@@ -1824,13 +1824,13 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@expo/config-plugins@npm:^8.0.0 || ^9.0.0":
-  version: 9.1.7
-  resolution: "@expo/config-plugins@npm:9.1.7"
+"@expo/config-plugins@npm:^9.0.0 || ^10.0.0":
+  version: 10.0.2
+  resolution: "@expo/config-plugins@npm:10.0.2"
   dependencies:
-    "@expo/config-types": "npm:^53.0.0"
-    "@expo/json-file": "npm:~9.1.3"
-    "@expo/plist": "npm:^0.3.3"
+    "@expo/config-types": "npm:^53.0.3"
+    "@expo/json-file": "npm:~9.1.4"
+    "@expo/plist": "npm:^0.3.4"
     "@expo/sdk-runtime-versions": "npm:^1.0.0"
     chalk: "npm:^4.1.2"
     debug: "npm:^4.3.5"
@@ -1842,18 +1842,18 @@ __metadata:
     slugify: "npm:^1.6.6"
     xcode: "npm:^3.0.1"
     xml2js: "npm:0.6.0"
-  checksum: 10c0/fc2bbf909ebe5294ced2a0e4754c2409fa77a3d463c9b7c94973e97143489a62e3b31b20b91fdb2d8719f690b4c431915ce2e0f0f5d6129a21e2b2924d1bb2dd
+  checksum: 10c0/4049c2c6dc2589ce0dc840ef971bcdd4215ca74e5057fc92c07004a877c9198dc78bd07b91d3ba908242e70e683faa6fb516f07ec42c2328cbe8e661a65591d0
   languageName: node
   linkType: hard
 
-"@expo/config-types@npm:^53.0.0":
-  version: 53.0.3
-  resolution: "@expo/config-types@npm:53.0.3"
-  checksum: 10c0/ee8941456764309115fb5b3cb9ea8d86f2a85ec09b3060469eb8df7cf66ce74d78c2ff2db3a20f06356346191621412c0e35e1ded859aeb41020e7b3fb6084f4
+"@expo/config-types@npm:^53.0.3":
+  version: 53.0.4
+  resolution: "@expo/config-types@npm:53.0.4"
+  checksum: 10c0/e50e584af3bc0cf885333d84b10032aa8a0c3f3b254ed4aaeb3aa3e02dea74ba694f5cb7cf49fe7b7b924cecf337be09e0e5db24cf5802aca51eaae51054f1c4
   languageName: node
   linkType: hard
 
-"@expo/json-file@npm:~9.1.3":
+"@expo/json-file@npm:~9.1.4":
   version: 9.1.4
   resolution: "@expo/json-file@npm:9.1.4"
   dependencies:
@@ -1863,7 +1863,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@expo/plist@npm:^0.3.3":
+"@expo/plist@npm:^0.3.4":
   version: 0.3.4
   resolution: "@expo/plist@npm:0.3.4"
   dependencies:
@@ -10289,10 +10289,10 @@ __metadata:
   linkType: hard
 
 "react-native-bootsplash@npm:^6.3.7":
-  version: 6.3.7
-  resolution: "react-native-bootsplash@npm:6.3.7"
+  version: 6.3.8
+  resolution: "react-native-bootsplash@npm:6.3.8"
   dependencies:
-    "@expo/config-plugins": "npm:^8.0.0 || ^9.0.0"
+    "@expo/config-plugins": "npm:^9.0.0 || ^10.0.0"
     "@react-native-community/cli-config-android": "npm:^18.0.0"
     "@react-native-community/cli-config-apple": "npm:^18.0.0"
     "@react-native-community/cli-tools": "npm:^18.0.0"
@@ -10311,7 +10311,7 @@ __metadata:
     react-native: "*"
   bin:
     react-native-bootsplash: cli.js
-  checksum: 10c0/e74b73fcb6ff5821e2d50f251de00f48d08fcd9209b67727f6875d865dccce20bbff7dd4c39e2fc132bdcbabcf7e3e316dbfd1889af613ceb2279caf9cd65a57
+  checksum: 10c0/63c60d0e13a9599cf7812c21befc281f12394f690d9ceff10cdd2b08c698714a4ff386be99a4cd63c67a6158210422fb14681cdde5cdf8c67d49da822e2b77f2
   languageName: node
   linkType: hard
 
