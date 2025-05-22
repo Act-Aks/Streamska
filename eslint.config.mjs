@@ -1,6 +1,6 @@
 import { configs } from '@act-aks/eslint-config'
+import pluginReactQuery from '@tanstack/eslint-plugin-query'
 import pluginReact from 'eslint-plugin-react'
-import testingLibrary from 'eslint-plugin-testing-library'
 import { defineConfig } from 'eslint/config'
 
 const noRestrictedImportPaths = [
@@ -12,8 +12,7 @@ const noRestrictedImportPaths = [
 ]
 
 export default defineConfig([
-    pluginReact.configs.flat.recommended,
-    testingLibrary.configs['flat/react'],
+    ...pluginReactQuery.configs['flat/recommended'],
     ...configs.recommended,
     ...configs.react,
     ...configs.reactNative,
