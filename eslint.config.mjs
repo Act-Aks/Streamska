@@ -2,7 +2,6 @@ import { configs } from '@act-aks/eslint-config'
 import pluginReact from 'eslint-plugin-react'
 import testingLibrary from 'eslint-plugin-testing-library'
 import { defineConfig } from 'eslint/config'
-import tsEslint from 'typescript-eslint'
 
 const noRestrictedImportPaths = [
     {
@@ -13,7 +12,6 @@ const noRestrictedImportPaths = [
 ]
 
 export default defineConfig([
-    tsEslint.configs.recommended,
     pluginReact.configs.flat.recommended,
     testingLibrary.configs['flat/react'],
     ...configs.recommended,
@@ -34,7 +32,6 @@ export default defineConfig([
     },
     {
         rules: {
-            'react/react-in-jsx-scope': 'off',
             '@typescript-eslint/naming-convention': 'off',
             'no-console': ['error', { allow: ['error'] }],
             'no-relative-import-paths/no-relative-import-paths': [
@@ -42,6 +39,15 @@ export default defineConfig([
                 { allowSameFolder: true, rootDir: './src', prefix: '@App' },
             ],
             '@typescript-eslint/no-restricted-imports': ['error', { paths: noRestrictedImportPaths }],
+        },
+    },
+    {
+        files: ['**/*.js', '**/*.jsx', '**/*.ts', '**/*.tsx'],
+        languageOptions: { globals: { React: 'readonly' }, parserOptions: { ecmaFeatures: { jsx: true } } },
+        plugins: { react: pluginReact },
+        rules: {
+            'react/react-in-jsx-scope': 'off',
+            'react/jsx-uses-react': 'off',
         },
     },
 ])
