@@ -1,2 +1,2 @@
-export { default as Home } from './Home/Home'
-export { default as Settings } from './Settings/Settings'
+export * from './Home/Home'
+export * from './Settings/Settings'

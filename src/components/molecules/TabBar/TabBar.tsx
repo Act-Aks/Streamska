@@ -7,10 +7,10 @@ import Animated from 'react-native-reanimated'
 import { TabStackParamList } from '@App/components/organisms/BottomTabNavigator/BottomTabNavigator.static'
 
 import { useTabBar } from './TabBar.logic'
-import TabBarIcon from './TabBarIcon/TabBarIcon'
-import TabBarIndicator from './TabBarIndicator/TabBarIndicator'
+import { TabBarIcon } from './TabBarIcon/TabBarIcon'
+import { TabBarIndicator } from './TabBarIndicator/TabBarIndicator'
 
-const TabBar: React.FC<BottomTabBarProps> = ({ state, descriptors, navigation }) => {
+export const TabBar: React.FC<BottomTabBarProps> = ({ state, descriptors, navigation }) => {
     const { buildHref, animatedStyle } = useTabBar()
 
     const renderTabs = () =>
@@ -66,5 +66,3 @@ const TabBar: React.FC<BottomTabBarProps> = ({ state, descriptors, navigation })
         </Animated.View>
     )
 }
-
-export default TabBar

@@ -13,7 +13,7 @@ export const useScroll = () => {
     return context
 }
 
-const ScrollProvider: React.FC<PropsWithChildren> = ({ children }) => {
+export const ScrollProvider: React.FC<PropsWithChildren> = ({ children }) => {
     const tabBarTranslateY = useSharedValue<number>(0)
 
     const scrollHandler = useAnimatedScrollHandler({
@@ -46,5 +46,3 @@ const ScrollProvider: React.FC<PropsWithChildren> = ({ children }) => {
 
     return <ScrollContext.Provider value={values}>{children}</ScrollContext.Provider>
 }
-
-export default ScrollProvider

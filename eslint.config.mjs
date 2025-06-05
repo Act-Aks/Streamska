@@ -31,6 +31,7 @@ export default defineConfig([
     },
     {
         rules: {
+            'import/no-default-export': 'error',
             '@typescript-eslint/naming-convention': 'off',
             'no-console': ['error', { allow: ['error'] }],
             'no-relative-import-paths/no-relative-import-paths': [

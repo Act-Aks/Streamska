@@ -1,12 +1,11 @@
 import { Carousel } from '@act-aks/rn-carousel'
-import React from 'react'
 import { View } from 'react-native'
 import Animated from 'react-native-reanimated'
 
 import { Container, Text } from '@App/components/atoms'
 import { useScroll } from '@App/components/organisms/ScrollProvider/ScrollProvider'
 
-const Home: React.FC = () => {
+export const Home: React.FC = () => {
     const { scrollHandler } = useScroll()
 
     return (
@@ -82,5 +81,3 @@ const Home: React.FC = () => {
         </Container>
     )
 }
-
-export default Home

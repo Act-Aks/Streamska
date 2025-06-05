@@ -1,10 +1,11 @@
-import React from 'react'
-import Animated from 'react-native-reanimated'
+import { TextProps as RNTextProps } from 'react-native'
+import Animated, { AnimatedProps } from 'react-native-reanimated'
 
-import { TextProps } from './Text.static'
-
-const Text: React.FC<TextProps> = ({ text, ...props }) => {
-    return <Animated.Text {...props}>{text}</Animated.Text>
+interface TextProps extends AnimatedProps<RNTextProps> {
+    text: string
+    children?: never
 }
 
-export default Text
+export const Text: React.FC<TextProps> = ({ text, ...props }) => {
+    return <Animated.Text {...props}>{text}</Animated.Text>
+}

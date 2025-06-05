@@ -2,10 +2,10 @@ import { useNavigation } from '@react-navigation/native'
 import React from 'react'
 import { Pressable, View } from 'react-native'
 
-import Text from '@App/components/atoms/Text/Text'
+import { Text } from '@App/components/atoms/Text/Text'
 import { useColorScheme } from '@App/utils/common/colorScheme.ts'
 
-const Settings: React.FC = () => {
+export const Settings: React.FC = () => {
     const { navigate } = useNavigation()
     const { setColorScheme, isDarkColorScheme } = useColorScheme()
 
@@ -29,5 +29,3 @@ const Settings: React.FC = () => {
         </View>
     )
 }
-
-export default Settings

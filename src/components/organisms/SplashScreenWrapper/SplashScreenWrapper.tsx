@@ -7,7 +7,7 @@ import { useColorScheme } from '@App/utils/common/colorScheme.ts'
 
 import { DARK_THEME, LIGHT_THEME } from './SplashScreenWrapper.static'
 
-const SplashScreenWrapper: React.FC<PropsWithChildren> = ({ children }) => {
+export const SplashScreenWrapper: React.FC<PropsWithChildren> = ({ children }) => {
     const { colorScheme, isDarkColorScheme, setColorScheme } = useColorScheme()
 
     useEffect(() => {
@@ -24,5 +24,3 @@ const SplashScreenWrapper: React.FC<PropsWithChildren> = ({ children }) => {
         </ThemeProvider>
     )
 }
-
-export default SplashScreenWrapper

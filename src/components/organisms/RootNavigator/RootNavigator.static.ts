@@ -1,7 +1,7 @@
 import { NativeStackNavigationOptions, NativeStackScreenProps } from '@react-navigation/native-stack'
 import { ComponentProps } from 'react'
 
-import BottomTabNavigator from '@App/components/organisms/BottomTabNavigator/BottomTabNavigator'
+import { BottomTabNavigator } from '@App/components/organisms/BottomTabNavigator/BottomTabNavigator'
 
 export type RootStackParamList = {
     HomeTab: ComponentProps<typeof BottomTabNavigator> | undefined
@@ -16,7 +16,5 @@ export const rootStackScreens = {
 } satisfies RootStackParamList
 
 export const screenOptions: Record<keyof RootStackParamList, NativeStackNavigationOptions> = {
-    HomeTab: {
-        headerShown: false,
-    },
+    HomeTab: { headerShown: false },
 }

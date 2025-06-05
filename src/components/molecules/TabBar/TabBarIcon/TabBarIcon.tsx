@@ -4,7 +4,7 @@ import Animated, { useAnimatedStyle, useSharedValue, withSpring } from 'react-na
 
 import { getTabBarIconFromTabName, TabBarIconProps } from './TabBarIcon.static'
 
-const TabBarIcon: React.FC<TabBarIconProps> = ({ routeName, focused }) => {
+export const TabBarIcon: React.FC<TabBarIconProps> = ({ routeName, focused }) => {
     const { colors } = useTheme()
     const iconSize = 24
     const scale = useSharedValue(1)
@@ -26,5 +26,3 @@ const TabBarIcon: React.FC<TabBarIconProps> = ({ routeName, focused }) => {
         </Animated.View>
     )
 }
-
-export default TabBarIcon

@@ -1,5 +1,4 @@
 import { createNativeStackNavigator } from '@react-navigation/native-stack'
-import React from 'react'
 
 import { entries } from '@App/utils/common/misc.ts'
 
@@ -7,7 +6,7 @@ import { RootStackParamList, rootStackScreens, screenOptions } from './RootNavig
 
 const { Navigator, Screen } = createNativeStackNavigator<RootStackParamList>()
 
-const RootNavigator: React.FC = () => {
+export const RootNavigator: React.FC = () => {
     return (
         <Navigator>
             {entries(rootStackScreens).map(([screen, component]) => (
@@ -16,5 +15,3 @@ const RootNavigator: React.FC = () => {
         </Navigator>
     )
 }
-
-export default RootNavigator
